@@ -16,6 +16,7 @@ int value = -1;
       if( i == 30 ) // The Ball To Be Grown Via Mouse Click
       {
         balls[ i ].state = 3;
+        balls[ i ].rad = 0;
       }
     }
   }
