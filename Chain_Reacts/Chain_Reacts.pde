@@ -4,6 +4,8 @@
 // 2018-05-23
 
 Ball[] balls = new Ball[ 30 ];
+Ball starter = new Ball();
+int value = -1;
 
   void setup() 
   {
@@ -13,6 +15,7 @@ Ball[] balls = new Ball[ 30 ];
     {
       balls[ i ] = new Ball();
     }
+    
   }
   
   void draw()
@@ -27,5 +30,8 @@ Ball[] balls = new Ball[ 30 ];
   
   void mouseClicked()
   {
-    Ball a = new Ball();
+    if( value == -1 )
+    {
+      
+    }
   }
