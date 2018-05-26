@@ -13,7 +13,7 @@ int value = -1;
     for( int i = 0; i < 31; i++ )
     {
       balls[ i ] = new Ball();
-      if( i == 30 )
+      if( i == 30 ) // The Ball To Be Grown Via Mouse Click
       {
         balls[ i ].state = 3;
       }
@@ -32,7 +32,7 @@ int value = -1;
     }
     for( int i = 0; i < 31; i++ )
     {
-      if( value == 0 )
+      if( value == 0 ) // Centers Ball
       {
         balls[ 30 ].state = 1;
         balls[ 30 ].xCor = mouseX;

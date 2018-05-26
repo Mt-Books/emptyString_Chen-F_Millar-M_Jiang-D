@@ -22,7 +22,8 @@ class Ball
   void draw()
   {
     fill( c );
-    ellipse( xCor, yCor, 10, 10 );
+    noStroke();
+    ellipse( xCor, yCor, rad, rad );
   }
   
   void initiate()
@@ -59,13 +60,12 @@ class Ball
         state = 3; // Change to Dead State
       }
     }
-    
   }
   
   void collision( Ball other )
   {
     if( ( sqrt( ( pow( ( xCor - other.xCor ), 2 ) ) + ( pow( ( yCor - other.yCor ), 2 ) ) ) ) 
-        <= rad + other.rad )
+        <= rad + other.rad ) // Using Distance Formula
     {
       if( state == 0 && ( other.state == 1 || other.state == 2 ) )
       {
