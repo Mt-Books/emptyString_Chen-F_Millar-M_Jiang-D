@@ -1,7 +1,7 @@
-// Frank Chen
+// Team emptyString -- Frank Chen, Max Millar, Daniel Jiang
 // APCS2 pd2
-// HW53 -- All That Bouncin'
-// 2018-05-23
+// HW54 -- Ain't Even From the A-Town
+// 2018-05-26
 
 class Ball 
 {
